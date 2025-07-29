@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player: Made by Kaushal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey m1 round p1">
+          <div class="logo">
+            <img class="invert" src="svg/logo1.svg" alt="logo" />
+            <img src="svg/cancle.svg" alt="cancle" class="invert cancle">
+          </div>
+          <ul>
+            <li><img class="invert" src="/svg/home.svg" alt="home" /><p>home</p></li>
+            <li>
+              <img class="invert" src="/svg/search.svg" alt="search" />search
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey m1 round p1">
+          <div class="heading">
+            <h2>Your Library</h2>
+          </div>
+          <div class="songlist">
+            <ul>
+            </ul>
+           
+          </div>
+          <div class="footer bg-grey m1 round p1">
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/"
+                ><span>Legal</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                ><span>Safety &amp; Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                target="_main"><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/in-en/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-grey round">
+        <div class="header round">
+          <div class="nav">
+            <img src="svg/hamburger.svg" alt="hamburger" class="invert hamburger">
+            <img src="svg/left.svg" alt="left" class="invert svg" />
+            <img src="svg/right.svg" alt="rigth" class="invert svg" />
+          </div>
+          <div class="buttons">
+            <button  class="Singup-btn">Sing up</button>
+            <button class="login-btn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylist">
+          <h1>spotifyPlaylist</h1>
+          <div class="cardContainer">
+            <!-- <div data-folder="hindi" class="card round">
+              <div class="cardSvg">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="45" height="45">
+                 <circle cx="50" cy="50" r="48" fill="#28a745" stroke="#28a745" stroke-width="4" />
+                   <polygon points="40,30 40,70 70,50" fill="black" />
+                  </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c"
+                alt="photu"
+              />
+              <h2>Shaky</h2>
+              <p>Sanju rathod,G-SPXRK</p>
+            </div>
+             <div  data-folder="english" class="card round">
+              <div class="cardSvg">
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="45" height="45">
+                 <circle cx="50" cy="50" r="48" fill="#28a745" stroke="#28a745" stroke-width="4" />
+                   <polygon points="40,30 40,70 70,50" fill="black" />
+                  </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02c05d5034282ebb1a0d94a26c"
+                alt="photu"
+              />
+              <h2>Shaky</h2>
+              <p>Sanju rathod,G-SPXRK</p>
+            </div> -->
+
+            
+            </div>
+            
+          </div>
+          <div class="playbar">
+            <div class="playbar1">
+              <div class="songinfo"></div>
+              <div class="playbtn">
+              <img src="svg/previus.svg" id="previus" alt="playButton" class="svg invert">
+              <img src="svg/play.svg" id="play" alt="playButton" style="width: 21px;" class=" invert">
+              <img src="svg/next.svg" id="next" alt="playButton"class="svg invert">
+            </div>
+            <div class="songtimeup">
+               <div class="songtime"></div>
+              <div class="sound">
+                 <img src="svg/valume.svg" alt="valume" style="width: 22px;" class="invert volume">
+                 <input type="range" class="range">
+              </div>
+            </div>
+             
+            </div>
+            
+            <div class="sickbar">
+              <div class="circle">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="Script.js"></script>
+</html>

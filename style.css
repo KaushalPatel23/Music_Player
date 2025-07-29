@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --a: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+.left {
+  width: 25vw;
+  margin: 5px;
+}
+
+.right {
+  width: 74vw;
+  /* height: 97vh; */
+  position: relative;
+}
+.cobtainer {
+  background-color: black;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+.cancle {
+  display: none;
+  width: 17px;
+  /* height: 33px; */
+  margin-right: 13px;
+}
+.home ul li {
+  display: flex;
+  color: white;
+  gap: 5px;
+  width: 15px;
+  list-style: none;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.heading h2 {
+  font-size: 18px;
+}
+.heading {
+  padding: 10px 0px;
+}
+.library {
+  min-height: 77.6vh;
+  position: relative;
+}
+
+.footer {
+  display: flex;
+  gap: 13px;
+  font-size: 10px;
+  position: absolute;
+  bottom: 0px;
+  /* width: 25vw; */
+  flex-wrap: wrap;
+}
+
+.footer a {
+  color: grey;
+}
+.right {
+  margin: 10px 0px;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+  height: 70px;
+}
+.right .nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+}
+.hamburger {
+  width: 20px;
+  /* width: 20px; */
+  display: none;
+}
+.header > * {
+  /* header chya andar je direct element aahe tyachi padding */
+  padding: 14px;
+}
+
+.spotifyPlaylist {
+  padding: 16px;
+}
+
+.cardContainer {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* If the content inside the element exceeds its vertical space, a vertical scrollbar will appear (or stay visible).
+It forces a scrollbar for consistency in layout. */
+  /* max-width: 100%; */
+  overflow-y: auto;
+
+  max-height: 68vh;
+}
+
+.card {
+  width: 175px;
+  padding: 5px;
+  background-color: #292929;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card:hover {
+  --a: 1;
+  background-color: #333333;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card > * {
+  padding-top: 5px;
+}
+.card h2 {
+  font-size: 19px;
+}
+.card p {
+  font-size: 12px;
+}
+
+.cardSvg {
+  position: absolute;
+  right: 10px;
+  /* 85 */
+  bottom: 80px;
+  opacity: var(--a);
+  transition: all 1s ease-in;
+}
+.buttons > * {
+  margin: 0 15px;
+}
+.Singup-btn {
+  background-color: #292929;
+  color: rgb(115, 115, 115);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+.Singup-btn:hover {
+  color: white;
+  font-size: 16px;
+}
+.login-btn {
+  background-color: #f2eded;
+  color: rgb(13, 13, 13);
+  width: 90px;
+  height: 45px;
+  border-radius: 19px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+.login-btn:hover {
+  font-size: 16px;
+}
+
+.playbar {
+  margin-bottom: 10px;
+  border-radius: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: fixed;
+  bottom: 6px;
+  width: 71vw;
+  padding: 10px;
+  background-color: #323332;
+  height: 34px;
+}
+
+.playbar1 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 65%;
+}
+.playbar1 .songinfo {
+  font-size: 15px;
+  width: 33%;
+  padding: 0px 10px;
+
+  white-space: nowrap; /* Keep text in one line */
+  overflow: hidden; /* Hide the overflowing part */
+  text-overflow: ellipsis;
+}
+.playbar1 .songtimeup {
+  width: 33%;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  gap: 10px;
+}
+.playbtn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 33%;
+}
+
+.playbtn img {
+  cursor: pointer;
+}
+.sickbar {
+  margin: 8px;
+  width: 97%;
+  height: 3px;
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  transition: left 0.3s;
+  cursor: pointer;
+}
+.sickbar .circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: -3px;
+  left: 0%;
+  transition: left 0.1s linear;
+}
+
+.songlist {
+  height: 60vh;
+  overflow-y: auto;
+  padding: 3px 12px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin-bottom: 55px;
+  cursor: pointer;
+}
+
+.songlist ul li {
+  list-style: none;
+  padding: 10px 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid white;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden; /* <--- Prevent overflow issues */
+}
+.maininfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 68%;
+  overflow: hidden; /* <--- Prevent overflow issues */
+}
+.songlist .info {
+  font-size: 12px;
+}
+.sound {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+.range {
+  width: 80px;
+  height: 5px;
+  cursor: pointer;
+}
+
+.songlist .playnow {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 10px;
+  width: 32%;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .left {
+    width: 360px;
+    position: absolute;
+    left: -100%;
+    transition: all 0.2s;
+    z-index: 1;
+    background-color: black;
+    padding: 0%;
+  }
+  .right {
+    width: 100vw;
+    height: 100vh;
+  }
+  .playbar {
+    width: calc(100vw - 60px);
+  }
+  .sickbar {
+    width: calc(100vw - 70px);
+  }
+  .hamburger {
+    display: block;
+  }
+  .cancle {
+    display: block;
+  }
+  .card {
+    width: 44vw;
+  }
+  .spotifyPlaylist {
+    padding: 16px 0px;
+  }
+  .spotifyPlaylist h1 {
+    padding-bottom: 10px;
+    font-size: 31px;
+    padding-left: 19px;
+  }
+  .cardContainer {
+    margin: 0px;
+    gap: 0px;
+    justify-content: space-evenly;
+    max-height: 75vh;
+  }
+  .sound {
+    display: none;
+  }
+
+  /* .range {
+    width: 20px;
+  } */
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 93vw;
+    margin-bottom: 15px;
+  }
+}
